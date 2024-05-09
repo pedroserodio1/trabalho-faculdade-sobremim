@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #022648;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #04396b;
+}
+
+.content {
+    padding: 20px;
+    display: none;
+}
+
+.content h1 {
+    color: #333;
+}
+
+.content h2 {
+    color: #333;
+}
+
+.content p {
+    color: #666;
+}
+
+.sobre-content {
+    display: flex;
+    gap: 50px;
+}
+
+.sobre-content .text {
+    align-items: flex-end;
+}
+
+.sobre-content .image {
+    align-items: flex-start;
+    
+}
+
+.sobre-content .image img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.formacao-list{
+    list-style-type: none;
+}
+
+.formacao-list hr{
+    width: 100%;
+}
+
+.formacao-list li a{
+    text-decoration: none;
+}
+
+.formacao-content {
+    display: flex;
+    gap: 10px;
+}
+
+.formacao-content .image {
+    align-items: flex-start;
+}
+
+.formacao-content .details {
+    align-items: flex-end;
+}
+
+.formacao-content .image img {
+    width: 100px;
+}
+
+footer {
+    background-color: #022648;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #d3cccc;
+}

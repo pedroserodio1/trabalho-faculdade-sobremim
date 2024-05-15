@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- Bloco para menu de paginas -->
+    <!-- Bloco para o menu de navegação -->
     <div class="menu">
         <ul>
             <li><a href="#sobre">Sobre Mim</a></li>
@@ -18,43 +18,44 @@
         </ul>
     </div>
 
-
-    <!-- Bloco para todo o conteudo da página "Sobre mim" -->
+    <!-- Bloco para todo o conteúdo da página "Sobre Mim" -->
     <div id="sobre" class="content">
-        
         <h1>Sobre Mim</h1>
-        <!-- Bloco para adicionar o conteudo do sobre mim de forma organizada na tela -->
+        <!-- Bloco para adicionar o conteúdo do "Sobre Mim" de forma organizada na tela -->
         <div class="sobre-content">
             <!-- Bloco para imagem -->
             <div class="image">
                 <img src="./assets/pedroserodio.jpg" alt="Foto do Pedro Serôdio">
             </div>
-            <!-- Bloco para o conteudo  -->
+            <!-- Bloco para o conteúdo textual -->
             <div class="text">
                 <h2>Pedro Serôdio</h2>
                 <p>
                     Meu nome é Pedro Henrique Serôdio de Oliveira, tenho 20 anos e moro em Pouso Alegre - MG.
                 </p>
                 <p>
-                    Sou programador especializado em back-end com nodeJs e curso Analise e Desenvolvimento de sistemas na Uninter. 
+                    Sou programador especializado em back-end com Node.js e curso Análise e Desenvolvimento de Sistemas na Uninter. 
                 </p>
                 <p>
-                    Gosto de passar meu tempo livre jogando videogame, vendo filmes, ouvindo musica ou lendo livros.
+                    Gosto de passar meu tempo livre jogando videogame, vendo filmes, ouvindo música ou lendo livros.
                 </p>
             </div>
         </div>
     </div>
 
-    <!-- Bloco para o conteudo da pagina "Formação" -->
+    <!-- Bloco para o conteúdo da página "Formação" -->
     <div id="formacao" class="content">
         <h1>Formação</h1>
+        <!-- Lista não ordenada das formações -->
         <ul class="formacao-list">
             <li>
                 <a href="https://www.linkedin.com/school/cepbrazopolisoficial/" target="_blank"><h3>Centro de Educação Profissional Tancredo Neves</h3></a>
                 <div class="formacao-content">
+                    <!-- Bloco para imagem da formação -->
                     <div class="image">
-                        <img src="./assets/cep.jpg" alt="Logo Cep Brazopolis">
+                        <a href="https://www.linkedin.com/school/cepbrazopolisoficial/" target="_blank"><img src="./assets/cep.jpg" alt="Logo Cep Brazopolis"></a>
                     </div>
+                    <!-- Bloco para os detalhes da formação -->
                     <div class="details">
                         <p>Colegial Técnico, Técnico em Informática para Internet</p>
                         <p>2018 - 2020</p>
@@ -63,14 +64,15 @@
             </li>
             <hr>
             <li>
-                <a href="https://www.linkedin.com/school/grupo-uninter/" target="_blank"><h3>
-                    UNINTER Centro Universitário Internacional</h3></a>
+                <a href="https://www.linkedin.com/school/grupo-uninter/" target="_blank"><h3>UNINTER Centro Universitário Internacional</h3></a>
                 <div class="formacao-content">
+                    <!-- Bloco para imagem da formação -->
                     <div class="image">
-                        <img src="./assets/uninter.jpg" alt="Logo Uninter">
+                        <a href="https://www.linkedin.com/school/grupo-uninter/" target="_blank"><img src="./assets/uninter.jpg" alt="Logo Uninter"></a>
                     </div>
+                    <!-- Bloco para os detalhes da formação -->
                     <div class="details">
-                        <p>Curso Superior de Tecnologia (CST), ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</p>
+                        <p>Curso Superior de Tecnologia (CST), Análise e Desenvolvimento de Sistemas</p>
                         <p>ago de 2022 - Presente</p>
                     </div>
                 </div>
@@ -78,16 +80,63 @@
         </ul>
     </div>
 
+    <!-- Bloco para o conteúdo da página "Portfólio" -->
     <div id="portfolio" class="content">
-        <h2>Portfólio</h2>
-        <p>Aqui você pode mostrar seus projetos e trabalhos anteriores.</p>
+        <h1>Portfólio</h1>
+        <!-- Div contendo todos os cards para organização -->
+        <div class="cards-container">
+            <!-- Card para as informações dos projetos do portfólio -->
+            <div class="card">
+                <h2>Sistema ponto</h2>
+                <p>Uma API Rest desenvolvida em TypeScript para gerenciamento de pontos de entrada e saída do expediente</p>
+                <a href="https://github.com/pedroserodio1/sistema-ponto" target="_blank">Acessar Projeto</a>
+            </div>
+            <div class="card">
+                <h2>Criador de MVU</h2>
+                <p>Sistema em Python para criação de arquivos MVU, que seria um arquivo de playlist de vídeos</p>
+                <a href="https://github.com/pedroserodio1/create-playlist-mvu" target="_blank">Acessar Projeto</a>
+            </div>
+            <div class="card">
+                <h2>Autenticação 2FA</h2>
+                <p>API Rest de um sistema de autenticação em dois fatores</p>
+                <a href="https://github.com/pedroserodio1/autenticacao-2FA" target="_blank">Acessar Projeto</a>
+            </div>
+            <div class="card">
+                <h2>Lanchonete</h2>
+                <p>API Rest para gerenciamento de lanchonete</p>
+                <a href="https://github.com/pedroserodio1/api-lanchonete" target="_blank">Acessar Projeto</a>
+            </div>
+        </div>
     </div>
 
+    <!-- Bloco para o conteúdo da página "Contato" -->
     <div id="contato" class="content">
-        <h2>Contato</h2>
-        <p>Aqui você pode fornecer informações de contato.</p>
+        <h1>Contato</h1>
+        <!-- Div para o formulário de contato -->
+        <div class="form-container">
+            <form action="#" method="post">
+                <!-- Campo para o nome -->
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <!-- Campo para o email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!-- Campo para a mensagem -->
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <!-- Botão de envio -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </div>
 
+    <!-- Rodapé da página -->
     <footer>
         <p>Desenvolvido por: Pedro Serôdio - RU 4225358</p>
     </footer>

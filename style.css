@@ -1,23 +1,28 @@
+/* Define a fonte global do documento e remove as margens e preenchimentos padrão */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Estiliza o menu de navegação */
 .menu {
     background-color: #022648;
 }
 
+/* Remove os estilos de lista padrão do menu */
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+/* Define os itens da lista do menu como elementos inline */
 .menu ul li {
     display: inline-block;
 }
 
+/* Estiliza os links do menu */
 .menu ul li a {
     display: block;
     color: white;
@@ -26,76 +31,213 @@ body {
     text-decoration: none;
 }
 
+/* Estiliza os links do menu quando são focados */
 .menu ul li a:hover {
     background-color: #04396b;
 }
 
+/* Estiliza os links do menu quando estão selecionados */
+.menu ul li .active{
+    background-color: #04396b;
+}
+
+/* Estiliza a área de conteúdo e a oculta por padrão */
 .content {
     padding: 20px;
     display: none;
 }
 
-.content h1 {
+/* Estiliza os títulos dentro da área de conteúdo */
+.content h1, .content h2 {
     color: #333;
 }
 
-.content h2 {
-    color: #333;
-}
-
+/* Estiliza os parágrafos dentro da área de conteúdo */
 .content p {
     color: #666;
 }
 
+/* Estiliza a seção sobre (sobre-content) com um layout flexível e espaçamento */
 .sobre-content {
     display: flex;
     gap: 50px;
 }
 
+/* Alinha o texto na parte inferior do contêiner */
 .sobre-content .text {
     align-items: flex-end;
 }
 
+/* Alinha a imagem no topo do contêiner */
 .sobre-content .image {
     align-items: flex-start;
-    
 }
 
+/* Estiliza a imagem dentro da seção sobre */
 .sobre-content .image img {
     width: 250px;
     border-radius: 10px;
     box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.formacao-list{
+/* Remove os estilos de lista padrão da lista de formação */
+.formacao-list {
     list-style-type: none;
 }
 
-.formacao-list hr{
+/* Estiliza a linha horizontal dentro da lista de formação */
+.formacao-list hr {
     width: 100%;
 }
 
-.formacao-list li a{
+/* Remove a decoração dos links dentro da lista de formação */
+.formacao-list li a {
     text-decoration: none;
 }
 
+/* Estiliza a seção de formação com um layout flexível e espaçamento */
 .formacao-content {
     display: flex;
     gap: 10px;
 }
 
+/* Alinha a imagem na parte superior do contêiner */
 .formacao-content .image {
     align-items: flex-start;
 }
 
+/* Alinha os detalhes na parte inferior do contêiner */
 .formacao-content .details {
     align-items: flex-end;
 }
 
+/* Estiliza a imagem dentro da seção de formação */
 .formacao-content .image img {
     width: 100px;
 }
 
+/* Estiliza o contêiner de cards com um layout flexível e espaçamento */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estiliza cada card individual */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estiliza o título do card */
+.card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+/* Estiliza o parágrafo dentro do card */
+.card p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+
+/* Estiliza o link dentro do card */
+.card a {
+    background-color: #022648;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Estiliza o link dentro do card quando é focado */
+.card a:hover {
+    background-color: #04396b;
+}
+
+/* Adiciona efeitos de transformação e sombra ao card quando é focado */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza o contêiner do formulário */
+.form-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Estiliza o título do formulário */
+form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Estiliza cada grupo de campos dentro do formulário */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estiliza os rótulos dos campos do formulário */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estiliza os campos de entrada e textarea do formulário */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Adiciona foco aos campos de entrada e textarea do formulário */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #022648;
+    outline: none;
+}
+
+/* Estiliza o botão de envio do formulário */
+button {
+    background-color: #022648;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estiliza o botão de envio do formulário quando é focado */
+button:hover {
+    background-color: #04396b;
+}
+
+/* Estiliza o rodapé */
 footer {
     background-color: #022648;
     padding: 20px;
@@ -106,6 +248,7 @@ footer {
     height: 8px;
 }
 
+/* Estiliza o parágrafo dentro do rodapé */
 footer p {
     margin: 0;
     font-size: 14px;
